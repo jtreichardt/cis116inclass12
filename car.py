@@ -9,20 +9,20 @@ class Car:
         print("I'm going {} kph!".format(self.speed))
 
     def accelerate(self):
-        self.speed += 5
+        self.speed += 3
 
     def brake(self):
         if self.speed < 5:
             self.speed = 0
         else:
-            self.speed -= 5
+            self.speed -= 3
 
     def step(self):
         self.odometer += self.speed
         self.time += 1
 
     def average_speed(self):
-        if self.time!=0:
+        if self.time != 0:
             return self.odometer / self.time
 
 
